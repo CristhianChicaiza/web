@@ -4,10 +4,11 @@ import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { NaveComponent } from "./shared/nave/nave.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, FooterComponent, DashboardComponent,],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

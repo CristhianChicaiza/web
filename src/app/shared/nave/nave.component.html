@@ -8,11 +8,11 @@
       <div class="navbar-nav">
 
        <li class="nav-item">
-       <a class="nav-link active" aria-current="page" href="#">Home</a>
+       <a class="nav-link active" aria-current="page" routerLink="/inicio" >Home</a>
       </li>
 
       <li *ngIf="!userLoginOn" class="nav-item">
-        <a class="nav-link" href="#">Iniciar sesion</a>
+        <a class="nav-link"  routerLink="/iniciar-sesion" routerLinkActive="active" >Iniciar sesion</a>
       </li>
 
       <li *ngIf="userLoginOn" class="nav-item">

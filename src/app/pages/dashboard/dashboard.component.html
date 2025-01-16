@@ -1,3 +1,5 @@
 <app-nave></app-nave>
-<p>Dahboard</p>
+<p *ngIf="!userLoginOn">Usuario NO registrado</p>
+<p *ngIf="userLoginOn">Usuario registrado</p>
 
+   
